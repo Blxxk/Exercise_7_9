@@ -11,19 +11,29 @@ class digits
       string e = Console.ReadLine();
      while(e!="end"){
 int input = Convert.ToInt32(e);
-       if(input != 0)
-{
-       if(input/10 == 0)
+       if(input != 0){
+{ 
+	   if(input/10 == 0){
            a ++;  // it only has one digit
-       else 
-       if (input/100 == 0)
+       }
+       else{ 
+       if (input/100 == 0){
 		b ++;  // the number has 2 digits
-        else
-        if (input/1000 == 0)
+        }
+        
+        else{
+        if (input/1000 == 0){
         c ++;  // the number has 3 digits
-        else
+        }
+        
+        else{
            d++;  // the number has more than 3 digits
         }
+	}
+}
+}
+}
+
       e = Console.ReadLine();
 }
 
